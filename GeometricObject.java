@@ -8,6 +8,7 @@ public abstract class GeometricObject {
 	
 	protected GeometricObject(){
 		this.dateCreated = new java.util.Date();
+		// System.out.println("GO constructor");
 	}
 	
 	protected GeometricObject(String color, boolean filled){

@@ -6,7 +6,7 @@ public class Rectangle extends GeometricObject{
 	private double height;
 	
 	public Rectangle(){
-		
+		System.out.println("R constructor");
 	}
 	
 	public Rectangle(double width, double height){

@@ -5,7 +5,7 @@ public class Circle extends GeometricObject{
 	private double radius;
 	
 	public Circle(){
-		
+		System.out.println("C constructor");
 	}
 	
 	public Circle(double radius){

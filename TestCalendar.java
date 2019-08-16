@@ -31,6 +31,17 @@ public class TestCalendar {
 		String[] dayOfWeek = {"Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday"};
 		System.out.println("Day of the week on September 11, 2001 is " + dayOfWeek[calendar1.get(Calendar.DAY_OF_WEEK)-1]);
 		System.out.println("Datum calendar1 is " + calendar1.get(Calendar.DAY_OF_MONTH) + ", " + calendar1.get(Calendar.MONTH) + ", " + calendar1.get(Calendar.YEAR));
+		calendar1.set(Calendar.DAY_OF_MONTH, 1);
+		System.out.println("Prvi dan u mjesecu: " + calendar1.get(Calendar.DAY_OF_MONTH));
+		calendar1.add(Calendar.DAY_OF_MONTH, 5);
+		System.out.println("Plus pet dana " + calendar1.get(Calendar.DAY_OF_MONTH));
+		calendar1.add(Calendar.DAY_OF_MONTH, -10);
+		System.out.println("Minus deset dana " + calendar1.get(Calendar.DAY_OF_MONTH));
+		System.out.println("Broj dana u mjesecu: " + calendar1.getActualMaximum(Calendar.DAY_OF_MONTH));
+		Date date = new Date();
+		System.out.println("Current time is: " + date);
+		calendar1.setTime(date);
+		System.out.println("Current time is: " + calendar1.getTime());
 	}
 
 }

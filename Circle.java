@@ -1,6 +1,6 @@
 package Primjeri;
 
-public class Circle extends GeometricObject{
+public class Circle extends GeometricObject implements Cloneable{
 
 	private double radius;
 	

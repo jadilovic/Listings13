@@ -1,6 +1,6 @@
 package Primjeri;
 
-public abstract class GeometricObject {
+public abstract class GeometricObject implements Cloneable{
 
 	private String color = "white";
 	private boolean filled;
@@ -39,7 +39,12 @@ public abstract class GeometricObject {
 	
 	@Override
 	public String toString(){
-		return "date created " + dateCreated + " with color\n" + color + " and filled " + filled;
+		return "Rectangle date created: " + dateCreated + " with color " + color + " and filled: " + filled;
+	}
+	
+	@Override
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
 	}
 	
 	public abstract double getArea();
